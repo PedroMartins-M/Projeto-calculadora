@@ -36,7 +36,7 @@
             bpnsubtrair = new Button();
             bpnmultiplicar = new Button();
             bpndividir = new Button();
-            lbltotal = new Label();
+            lblresultado = new Label();
             SuspendLayout();
             // 
             // lblnumero1
@@ -82,6 +82,7 @@
             bpnsomar.TabIndex = 4;
             bpnsomar.Text = "Somar";
             bpnsomar.UseVisualStyleBackColor = true;
+            bpnsomar.Click += bpnsomar_Click;
             // 
             // bpnsubtrair
             // 
@@ -110,22 +111,22 @@
             bpndividir.Text = "Dividir";
             bpndividir.UseVisualStyleBackColor = true;
             // 
-            // lbltotal
+            // lblresultado
             // 
-            lbltotal.AutoSize = true;
-            lbltotal.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbltotal.Location = new Point(558, 93);
-            lbltotal.Name = "lbltotal";
-            lbltotal.Size = new Size(19, 21);
-            lbltotal.TabIndex = 8;
-            lbltotal.Text = "0";
+            lblresultado.AutoSize = true;
+            lblresultado.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblresultado.Location = new Point(558, 93);
+            lblresultado.Name = "lblresultado";
+            lblresultado.Size = new Size(19, 21);
+            lblresultado.TabIndex = 8;
+            lblresultado.Text = "0";
             // 
             // Calculadora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(637, 215);
-            Controls.Add(lbltotal);
+            Controls.Add(lblresultado);
             Controls.Add(bpndividir);
             Controls.Add(bpnmultiplicar);
             Controls.Add(bpnsubtrair);
@@ -151,6 +152,6 @@
         private Button bpnsubtrair;
         private Button bpnmultiplicar;
         private Button bpndividir;
-        private Label lbltotal;
+        private Label lblresultado;
     }
 }
