@@ -92,6 +92,7 @@
             bpnsubtrair.TabIndex = 5;
             bpnsubtrair.Text = "Subtrair";
             bpnsubtrair.UseVisualStyleBackColor = true;
+            bpnsubtrair.Click += bpnsubtrair_Click;
             // 
             // bpnmultiplicar
             // 
@@ -101,6 +102,7 @@
             bpnmultiplicar.TabIndex = 6;
             bpnmultiplicar.Text = "Multiplicar";
             bpnmultiplicar.UseVisualStyleBackColor = true;
+            bpnmultiplicar.Click += bpnmultiplicar_Click;
             // 
             // bpndividir
             // 
@@ -110,6 +112,7 @@
             bpndividir.TabIndex = 7;
             bpndividir.Text = "Dividir";
             bpndividir.UseVisualStyleBackColor = true;
+            bpndividir.Click += bpndividir_Click;
             // 
             // lblresultado
             // 

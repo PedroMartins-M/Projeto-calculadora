@@ -24,5 +24,29 @@ namespace Calculadora
 
             lblresultado.Text = (numero1 + numero2).ToString();
         }
+
+        private void bpnsubtrair_Click(object sender, EventArgs e)
+        {
+            double numero1 = Convert.ToDouble(txtnumero1.Text);
+            double numero2 = Convert.ToDouble(txtnumero2.Text);
+
+            lblresultado.Text = (numero1 - numero2).ToString();
+        }
+
+        private void bpnmultiplicar_Click(object sender, EventArgs e)
+        {
+            double numero1 = Convert.ToDouble(txtnumero1.Text);
+            double numero2 = Convert.ToDouble(txtnumero2.Text);
+
+            lblresultado.Text = (numero1 * numero2).ToString();
+        }
+
+        private void bpndividir_Click(object sender, EventArgs e)
+        {
+            double numero1 = Convert.ToDouble(txtnumero1.Text);
+            double numero2 = Convert.ToDouble(txtnumero2.Text);
+
+            lblresultado.Text = (numero1 / numero2).ToString();
+        }
     }
 }
