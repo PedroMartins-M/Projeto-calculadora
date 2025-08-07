@@ -55,6 +55,7 @@
             txtnumero1.Name = "txtnumero1";
             txtnumero1.Size = new Size(128, 26);
             txtnumero1.TabIndex = 1;
+            txtnumero1.TextChanged += txtnumero1_TextChanged;
             // 
             // lblnumero2
             // 
